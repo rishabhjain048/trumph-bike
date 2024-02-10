@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <div class="p1">
+            <div class="nav">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" class="nav1">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+
+                </div>
+                <div class="nav2">
+                    <button>
+                        <h1>Motorcycle</h1>
+                    </button>
+                    <button>
+                        <h1>Accesories</h1>
+                    </button>
+                    <button>
+                        <h1>Clothes</h1>
+                    </button>
+                    <button>
+                        <h1>Owner</h1>
+                    </button>
+                    <button>
+                        <h1>Discover</h1>
+                    </button>
+                </div>
+                <div class="nav3">
+                    <button><i class="ri-search-line"></i>Search</button>
+                </div>
+            </div>''
+            <img data-scroll data-scroll-speed="3"
+                src="https://images.unsplash.com/photo-1473147437169-91ac8cebc017?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+        </div>
+
+        <div class="p2">
+            <div class="d1">
+                <img src="https://images.unsplash.com/photo-1534301034221-4d773a519037?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+
+            </div>
+            <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" class="d2">
+                <div class="dd2">
+                    <h1>REBORN CHOPAR</h1>
+                    <h2>T450 CROME</h2>
+                    <p>Motorcyclists returning from WWII bought stock motorcycles and customized them by removing
+                        unnecessary parts and by cutting or “chopping” the fenders and other parts to make the parts and
+                        motorcycle lighter and faster. Eventually, modified motorcycles wit chopped parts began to be
+                        referred to as “choppers”.</p>
+
+                    <button>EXPLORE</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="p3">
+            <div data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" class="p31">
+                <div class="dd3">
+                    <h1>TWIN POWER</h1>
+                    <h2>T450 CROME</h2>
+                    <p>Motorcyclists returning from WWII bought stock motorcycles and customized them by removing
+                        unnecessary parts and by cutting or “chopping” the fenders and other parts to make the parts and
+                        motorcycle lighter and faster. Eventually, modified motorcycles wit chopped parts began to be
+                        referred to as “choppers”.</p>
+
+                    <button>EXPLORE</button>
+                </div>
+
+
+            </div>
+            <div class="d32">
+                <img src="https://images.unsplash.com/photo-1603039997315-6dcb72ec1204?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+        </div>
+        /\
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
